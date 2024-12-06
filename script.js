@@ -37,21 +37,27 @@ const messi = {
 }
 
 const footballer = document.querySelector('.messi')
-footballer.innerHTML=`
- <img class="photo" src="${messi.photo}" alt="">
-<p class = "name">${messi.footName}<p>
-<p class = "name">${messi.speed}<p>
-<p class = "name">${messi.shoot}<p>
-<p class = "name">${messi.title}<p>
-`
+// footballer.innerHTML=`
+//  <img class="photo" src="${messi.photo}" alt="">
+// <p class = "name">${messi.footName}<p>
+// <p class = "name">${messi.speed}<p>
+// <p class = "name">${messi.shoot}<p>
+// <p class = "name">${messi.title}<p>
+// `
+
+
+// for (const key in messi) {
+//     console.log(key); 
+//     }
+
+//     const keys = Object.keys(messi)
+// console.log(keys);
+
+// const values = Object.values(messi)
+// console.log(values);
 
 
 for (const key in messi) {
-    console.log(key); 
+    messi[key] == '/image.png' ? footballer.innerHTML+=`<img src ="${messi[key]}" alt = "">`:
+    footballer.innerHTML+=`500`
     }
-
-    const keys = Object.keys(messi)
-console.log(keys);
-
-const values = Object.values(messi)
-console.log(values);
